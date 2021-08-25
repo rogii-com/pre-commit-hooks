@@ -1,0 +1,31 @@
+minimum_pre_commit_version: 2.14.0
+default_stages: [commit, merge-commit, push]
+repos:
+-   repo: meta
+    hooks:
+    -   id: check-hooks-apply
+    -   id: check-useless-excludes
+
+-   repo: https://github.com/rogii-com/pre-commit-hooks
+    rev: v1.0.0
+    hooks:
+    -   id: check-line-endings
+    -   id: check-trailing-whitespaces
+    -   id: check-end-of-file
+
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+    -   id: check-yaml
+    -   id: check-added-large-files
+    -   id: check-byte-order-marker
+    -   id: check-case-conflict
+    -   id: check-executables-have-shebangs
+    -   id: check-shebang-scripts-are-executable
+    -   id: check-merge-conflict
+        args: [--assume-in-merge]
+
+-   repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.1.10
+    hooks:
+    -   id: forbid-tabs
