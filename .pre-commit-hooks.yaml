@@ -1,0 +1,18 @@
+-   id: check-line-endings
+    name: Check line endings
+    description: Check line endings stored in repo
+    entry: check_line_endings
+    language: python
+    types: [text]
+-   id: check-trailing-whitespaces
+    name: Check trailing whitespaces
+    description: Check trailing whitespaces
+    entry: check_trailing_whitespaces
+    language: python
+    types: [text]
+-   id: check-end-of-file
+    name: Check end of files
+    description: Check that file is empty or ends with one line break
+    entry: check_end_of_file
+    language: python
+    types: [text]
