@@ -12,4 +12,5 @@ Add this to your `.pre-commit-config.yaml`
     -   id: check-line-endings
     -   id: check-trailing-whitespaces
     -   id: check-end-of-file
+    -   id: check-encoding-of-file
 ```

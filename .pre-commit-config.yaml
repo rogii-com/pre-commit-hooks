@@ -7,7 +7,7 @@ repos:
     -   id: check-useless-excludes
 
 -   repo: https://github.com/rogii-com/pre-commit-hooks
-    rev: utf_8_forbidden_hook
+    rev: v1.0.0
     hooks:
     -   id: check-line-endings
     -   id: check-trailing-whitespaces
