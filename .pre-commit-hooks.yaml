@@ -16,3 +16,9 @@
     entry: check_end_of_file
     language: python
     types: [text]
+-   id: check-encoding-of-file
+    name: Check encoding of files
+    description: Check that file is encoded with ASCII and UTF-8
+    entry: check_encoding_of_file
+    language: python
+    types: [text]
