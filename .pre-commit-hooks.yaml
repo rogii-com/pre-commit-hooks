@@ -16,3 +16,9 @@
     entry: check_end_of_file
     language: python
     types: [text]
+-   id: check-q_emit-macro
+    name: Check Q_EMIT macro usages
+    description: Check that Q_EMIT macro is not used as callable
+    entry: check_q_emit
+    language: python
+    types: [text]
