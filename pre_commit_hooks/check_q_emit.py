@@ -6,7 +6,7 @@ from typing import Sequence
 
 def check_q_emit_in_file(filename: str) -> bool:
     result = True
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
         for i in range(len(lines)):
